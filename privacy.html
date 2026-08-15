@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隐私政策 · Privacy Policy — 拾忆 · Memoria</title>
+<title>隐私政策 · Privacy Policy — Memoria · 拾忆</title>
 <style>
   :root{
     --bg:#f6f6f8; --card:#fff; --text:#1c1c1e; --sub:#6b6b70; --line:#e6e6ea; --accent:#FF9F0A;
@@ -30,6 +30,10 @@
   .divider{height:1px;background:var(--line);margin:40px 0}
   .lang{font-size:13px;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
   footer{margin-top:48px;color:var(--sub);font-size:13px;text-align:center}
+  .store-tabs{display:inline-flex;gap:4px;padding:4px;margin:28px 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+  .store-tab{padding:8px 13px;border-radius:8px;color:var(--sub);font-size:14px;font-weight:600;text-decoration:none}
+  .store-tab.active{background:var(--accent);color:#fff}
+  [data-policy-store][hidden]{display:none}
 </style>
 </head>
 <body>
@@ -37,10 +41,17 @@
   <header>
     <div class="logo">🎂</div>
     <div>
-      <div style="font-weight:700;font-size:18px">拾忆 · Memoria</div>
+      <div style="font-weight:700;font-size:18px">Memoria · 拾忆</div>
       <div class="meta">纪念日 · 生日 · 倒数</div>
     </div>
   </header>
+
+  <nav class="store-tabs" aria-label="隐私政策发行渠道">
+    <a class="store-tab" data-store-tab="app-store" href="?store=app-store">App Store</a>
+    <a class="store-tab" data-store-tab="huawei" href="?store=huawei">华为应用市场</a>
+  </nav>
+
+  <section data-policy-store="app-store">
 
   <!-- 中文 -->
   <p class="lang">简体中文</p>
@@ -48,7 +59,7 @@
   <p class="meta">生效日期：2026 年 8 月 15 日</p>
 
   <div class="card">
-    <p>拾忆 · Memoria（以下简称“本应用”）是一款用于记录生日、纪念日与重要日子的工具。我们高度重视你的隐私。<strong>本应用不设账号、不设服务器，也不会收集或上传你的任何个人信息到我们这里。</strong></p>
+    <p>Memoria · 拾忆（以下简称“本应用”）是一款用于记录生日、纪念日与重要日子的工具。我们高度重视你的隐私。<strong>本应用不设账号、不设服务器，也不会收集或上传你的任何个人信息到我们这里。</strong></p>
 
     <h2>1. 我们收集哪些信息</h2>
     <p><strong>我们不收集任何个人信息。</strong>你在本应用中创建的内容（如姓名、日期、备注、颜色等）仅保存在你的设备本地。</p>
@@ -74,8 +85,8 @@
     <h2>8. 政策变更</h2>
     <p>若本政策有更新，我们会在本页面发布最新版本并更新生效日期。</p>
 
-    <h2>9. 应用分发平台</h2>
-    <p>本应用可通过 Apple App Store（展示名称为“拾忆 · Memoria”）及华为应用市场 AppGallery（展示名称为“拾忆”）获取。应用商店可能依据各自隐私政策处理下载、账号、购买或评价相关信息；该等信息不由本应用收集或控制。除本政策第 2 部分所述的 Apple 设备 iCloud 同步外，本应用不会向 Apple 或华为传输你的姓名、日期、备注或其他应用内记录内容。</p>
+    <h2>9. App Store 版本</h2>
+    <p>本政策适用于通过 Apple App Store 获取的 Memoria · 拾忆。App Store 中的展示名称为“Memoria · 拾忆”。Apple 可能依据其隐私政策处理下载、Apple ID、购买或评价相关信息；该等信息不由本应用收集或控制。</p>
 
     <h2>10. 联系我们</h2>
     <p>如对隐私有任何疑问，请联系：<a href="mailto:neverfall@foxmail.com">neverfall@foxmail.com</a></p>
@@ -89,7 +100,7 @@
   <p class="meta">Effective date: August 15, 2026</p>
 
   <div class="card">
-    <p>拾忆 · Memoria (the “App”) helps you record birthdays, anniversaries, and the days that matter. We take your privacy seriously. <strong>The App has no accounts and no servers of ours, and we do not collect or upload any of your personal information to us.</strong></p>
+    <p>Memoria · 拾忆 (the “App”) helps you record birthdays, anniversaries, and the days that matter. We take your privacy seriously. <strong>The App has no accounts and no servers of ours, and we do not collect or upload any of your personal information to us.</strong></p>
 
     <h2>1. Information We Collect</h2>
     <p><strong>We collect nothing.</strong> The content you create in the App (names, dates, notes, colors, etc.) is stored locally on your device.</p>
@@ -115,14 +126,64 @@
     <h2>8. Changes to This Policy</h2>
     <p>If this policy changes, we will post the updated version on this page and revise the effective date.</p>
 
-    <h2>9. App Distribution Platforms</h2>
-    <p>The App is available through the Apple App Store (display name “拾忆 · Memoria”) and Huawei AppGallery (display name “拾忆”). The stores may process information related to downloads, accounts, purchases, or reviews under their own privacy policies; that information is not collected or controlled by the App. Except for iCloud sync on Apple devices as described in Section 2, the App does not transmit your names, dates, notes, or other in-app records to Apple or Huawei.</p>
+    <h2>9. App Store Version</h2>
+    <p>This policy applies to Memoria · 拾忆 obtained through the Apple App Store, where its display name is “Memoria · 拾忆”. Apple may process information related to downloads, Apple IDs, purchases, or reviews under its own privacy policy; that information is not collected or controlled by the App.</p>
 
     <h2>10. Contact</h2>
     <p>Questions about privacy? Contact <a href="mailto:neverfall@foxmail.com">neverfall@foxmail.com</a></p>
   </div>
+  </section>
 
-  <footer>© 2026 拾忆 · Memoria · <a href="./">Home</a> · <a href="./support.html">Support</a></footer>
+  <section data-policy-store="huawei" hidden>
+    <p class="lang">简体中文</p>
+    <h1>华为应用市场隐私政策</h1>
+    <p class="meta">生效日期：2026 年 8 月 14 日</p>
+    <div class="card">
+      <p>Memoria · 拾忆（以下简称“本应用”）是一款用于记录生日、纪念日与重要日子的本地工具。<strong>本应用不设账号、不设服务器、不联网，也不会收集或上传任何个人信息。</strong></p>
+      <p>本版本为 HarmonyOS / 华为应用市场版本，展示名称为“拾忆”。iCloud 与云同步仅存在于 App Store 版本；本版本不提供云端或联网能力。</p>
+      <h2>1. 信息收集与本地存储</h2>
+      <p><strong>我们不收集个人信息。</strong>你创建的纪念日名称、日期、备注、颜色及提醒设置，仅通过 HarmonyOS 的 RelationalStore 与 Preferences 保存在设备应用沙箱内，不会离开你的设备。</p>
+      <h2>2. 权限说明</h2>
+      <p>本应用仅使用通知 / 发布提醒代理权限（<code>ohos.permission.PUBLISH_AGENT_REMINDER</code>），在本机展示你设定的纪念日与生日提醒。你可随时在系统设置中关闭该权限。</p>
+      <h2>3. 第三方、追踪与网络</h2>
+      <p>本应用不接入第三方 SDK、统计分析、广告或推送服务；不收集设备标识、位置、通讯录或相册信息；不共享、出售或传输你的数据，也不进行网络请求。</p>
+      <h2>4. 数据删除</h2>
+      <p>你可在应用内删除记录并清空回收站；卸载本应用会删除其产生的全部本地数据。由于没有网络备份，更换设备或卸载后数据无法恢复。</p>
+      <h2>5. 政策更新与联系</h2>
+      <p>如本政策变更，我们会更新本页和生效日期。如有疑问，请联系：<a href="mailto:neverfall@foxmail.com">neverfall@foxmail.com</a></p>
+    </div>
+    <div class="divider"></div>
+    <p class="lang">English</p>
+    <h1>Huawei AppGallery Privacy Policy</h1>
+    <p class="meta">Effective date: August 14, 2026</p>
+    <div class="card">
+      <p>Memoria · 拾忆 (the “App”) is a local tool for recording birthdays, anniversaries, and important dates. <strong>The App has no accounts, servers, or network access, and does not collect or upload personal information.</strong></p>
+      <p>This is the HarmonyOS / Huawei AppGallery version, where the display name is “拾忆”. iCloud and cloud sync exist only in the App Store version; this version has no cloud or network capability.</p>
+      <h2>1. Information and Local Storage</h2>
+      <p><strong>We collect no personal information.</strong> Your event names, dates, notes, colors, and reminder settings stay in the application sandbox on your device through HarmonyOS RelationalStore and Preferences.</p>
+      <h2>2. Permission</h2>
+      <p>The App uses only the notifications / publish reminder agent permission (<code>ohos.permission.PUBLISH_AGENT_REMINDER</code>) to show reminders locally. You may disable it in system settings at any time.</p>
+      <h2>3. Third Parties, Tracking, and Network Access</h2>
+      <p>The App has no third-party SDKs, analytics, advertising, or push services. It does not collect device identifiers, location, contacts, or photos; it does not share, sell, or transmit data, and it makes no network requests.</p>
+      <h2>4. Deletion</h2>
+      <p>You can delete records in the App and clear the Recycle Bin; uninstalling deletes all local data created by the App. Because there is no network backup, data cannot be recovered after uninstalling or changing devices.</p>
+      <h2>5. Updates and Contact</h2>
+      <p>If this policy changes, we will update this page and its effective date. Questions? Contact <a href="mailto:neverfall@foxmail.com">neverfall@foxmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>© 2026 Memoria · 拾忆 · <a href="./">Home</a> · <a href="./support.html">Support</a></footer>
 </div>
+<script>
+  const store = new URLSearchParams(location.search).get('store') === 'huawei' ? 'huawei' : 'app-store';
+  document.querySelectorAll('[data-policy-store]').forEach((section) => {
+    section.hidden = section.dataset.policyStore !== store;
+  });
+  document.querySelectorAll('[data-store-tab]').forEach((tab) => {
+    const active = tab.dataset.storeTab === store;
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-current', active ? 'page' : 'false');
+  });
+</script>
 </body>
 </html>
